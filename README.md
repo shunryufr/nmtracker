@@ -6,6 +6,6 @@ scanzone can be disable
 
 he autotarget when under 50 yarm can be disable
 
-some RoE NM are already
+some RoE NM are already add
 
 some tittle NM are add
