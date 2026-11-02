@@ -8,4 +8,4 @@ he autotarget when under 50 yarm can be disable
 
 some RoE NM are already
 
-somme tittle NM are add
+some tittle NM are add
