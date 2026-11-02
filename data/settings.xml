@@ -1,0 +1,821 @@
+<?xml version="1.1" ?>
+<settings>
+    <global>
+        <scan_enabled>true</scan_enabled>
+        <target_auto>true</target_auto>
+        <targets>
+            <z102_h12f>
+                <absent_since>0</absent_since>
+                <last_seen>0</last_seen>
+            </z102_h12f>
+            <z102_h134>
+                <absent_since>0</absent_since>
+                <last_seen>1793390050</last_seen>
+                <name>NM 0x134</name>
+                <respawn>0</respawn>
+                <zone>102</zone>
+            </z102_h134>
+            <z102_h135>
+                <absent_since>1793392610</absent_since>
+                <last_seen>1793392238</last_seen>
+                <name>NM 0x135</name>
+                <respawn>0</respawn>
+                <zone>102</zone>
+            </z102_h135>
+            <z102_h136>
+                <absent_since>1793392610</absent_since>
+                <last_seen>1793392241</last_seen>
+                <name>NM 0x136</name>
+                <respawn>0</respawn>
+                <zone>102</zone>
+            </z102_h136>
+            <z103_h14a>
+                <absent_since>0</absent_since>
+                <last_seen>0</last_seen>
+                <name>NM 0x14A</name>
+                <respawn>0</respawn>
+                <zone>103</zone>
+            </z103_h14a>
+            <z103_h14e>
+                <absent_since>0</absent_since>
+                <last_seen>0</last_seen>
+                <name>NM 0x14E</name>
+                <respawn>0</respawn>
+                <zone>103</zone>
+            </z103_h14e>
+            <z105_h00c>
+                <absent_since>0</absent_since>
+                <last_seen>0</last_seen>
+                <name>NM 0x00C</name>
+                <respawn>0</respawn>
+                <zone>105</zone>
+            </z105_h00c>
+            <z106_h135>
+                <absent_since>1793461480</absent_since>
+                <last_seen>1793461464</last_seen>
+                <name>NM 0x135</name>
+                <respawn>0</respawn>
+                <zone>106</zone>
+            </z106_h135>
+            <z106_h136>
+                <absent_since>1793461480</absent_since>
+                <last_seen>1793461457</last_seen>
+                <name>NM 0x136</name>
+                <respawn>0</respawn>
+                <zone>106</zone>
+            </z106_h136>
+            <z106_h13a>
+                <absent_since>0</absent_since>
+                <last_seen>0</last_seen>
+                <name>NM 0x13A</name>
+                <respawn>0</respawn>
+                <zone>106</zone>
+            </z106_h13a>
+            <z106_h142>
+                <absent_since>1793461480</absent_since>
+                <last_seen>1793461463</last_seen>
+                <name>NM 0x142</name>
+                <respawn>0</respawn>
+                <zone>106</zone>
+            </z106_h142>
+            <z107_h07b>
+                <absent_since>1793453448</absent_since>
+                <last_seen>1793450626</last_seen>
+                <name>NM 0x07B</name>
+                <respawn>0</respawn>
+                <zone>107</zone>
+            </z107_h07b>
+            <z107_h07c>
+                <absent_since>1793453448</absent_since>
+                <last_seen>1793450630</last_seen>
+                <name>NM 0x07C</name>
+                <respawn>0</respawn>
+                <zone>107</zone>
+            </z107_h07c>
+            <z107_h07d>
+                <absent_since>1793453448</absent_since>
+                <last_seen>1793450765</last_seen>
+                <name>NM 0x07D</name>
+                <respawn>0</respawn>
+                <zone>107</zone>
+            </z107_h07d>
+            <z107_h088>
+                <absent_since>1793453448</absent_since>
+                <last_seen>1793450605</last_seen>
+                <name>NM 0x088</name>
+                <respawn>0</respawn>
+                <zone>107</zone>
+            </z107_h088>
+            <z107_h089>
+                <absent_since>1793453448</absent_since>
+                <last_seen>1793450611</last_seen>
+                <name>NM 0x089</name>
+                <respawn>0</respawn>
+                <zone>107</zone>
+            </z107_h089>
+            <z107_h08a>
+                <absent_since>1793453448</absent_since>
+                <last_seen>1793450638</last_seen>
+                <name>NM 0x08A</name>
+                <respawn>0</respawn>
+                <zone>107</zone>
+            </z107_h08a>
+            <z109_h03c>
+                <absent_since>0</absent_since>
+                <last_seen>0</last_seen>
+                <name>NM 0x03C</name>
+                <respawn>0</respawn>
+                <zone>109</zone>
+            </z109_h03c>
+            <z109_h06d>
+                <absent_since>0</absent_since>
+                <last_seen>0</last_seen>
+                <name>NM 0x06D</name>
+                <respawn>0</respawn>
+                <zone>109</zone>
+            </z109_h06d>
+            <z109_h075>
+                <absent_since>1793455197</absent_since>
+                <last_seen>1793455118</last_seen>
+                <name>NM 0x075</name>
+                <respawn>0</respawn>
+                <zone>109</zone>
+            </z109_h075>
+            <z110_h102>
+                <absent_since>1793463481</absent_since>
+                <last_seen>1793463347</last_seen>
+                <name>NM 0x102</name>
+                <respawn>0</respawn>
+                <zone>110</zone>
+            </z110_h102>
+            <z110_h1d2>
+                <absent_since>0</absent_since>
+                <last_seen>0</last_seen>
+                <name>NM 0x1D2</name>
+                <respawn>0</respawn>
+                <zone>110</zone>
+            </z110_h1d2>
+            <z111_h062>
+                <absent_since>1793467975</absent_since>
+                <last_seen>1793467080</last_seen>
+                <name>NM 0x062</name>
+                <respawn>0</respawn>
+                <zone>111</zone>
+            </z111_h062>
+            <z111_h063>
+                <absent_since>1793467975</absent_since>
+                <last_seen>1793467234</last_seen>
+                <name>NM 0x063</name>
+                <respawn>0</respawn>
+                <zone>111</zone>
+            </z111_h063>
+            <z112_h013>
+                <absent_since>0</absent_since>
+                <entity_id>17235987</entity_id>
+                <last_seen>1793644390</last_seen>
+                <name>NM 0x013</name>
+                <respawn>0</respawn>
+                <scan_has_position>true</scan_has_position>
+                <scan_updated>1793644390</scan_updated>
+                <scan_x>274.31698608398</scan_x>
+                <scan_y>-129.34399414062</scan_y>
+                <scan_z>-8.3100004196167</scan_z>
+                <zone>112</zone>
+            </z112_h013>
+            <z112_h014>
+                <absent_since>0</absent_since>
+                <entity_id>17235988</entity_id>
+                <last_seen>1793644391</last_seen>
+                <name>NM 0x014</name>
+                <respawn>0</respawn>
+                <scan_has_position>true</scan_has_position>
+                <scan_updated>1793644391</scan_updated>
+                <scan_x>418.59298706055</scan_x>
+                <scan_y>-197.6190032959</scan_y>
+                <scan_z>0.42899999022484</scan_z>
+                <zone>112</zone>
+            </z112_h014>
+            <z115_h0d2>
+                <absent_since>1793549132</absent_since>
+                <last_seen>1793545856</last_seen>
+                <name>NM 0x0D2</name>
+                <respawn>0</respawn>
+                <zone>115</zone>
+            </z115_h0d2>
+            <z115_h0d3>
+                <absent_since>1793549132</absent_since>
+                <last_seen>1793545859</last_seen>
+                <name>NM 0x0D3</name>
+                <respawn>0</respawn>
+                <zone>115</zone>
+            </z115_h0d3>
+            <z115_h0d4>
+                <absent_since>1793549132</absent_since>
+                <last_seen>1793545844</last_seen>
+                <name>NM 0x0D4</name>
+                <respawn>0</respawn>
+                <zone>115</zone>
+            </z115_h0d4>
+            <z115_h0e4>
+                <absent_since>1793549132</absent_since>
+                <last_seen>1793545848</last_seen>
+                <name>NM 0x0E4</name>
+                <respawn>0</respawn>
+                <zone>115</zone>
+            </z115_h0e4>
+            <z115_h0e5>
+                <absent_since>1793549132</absent_since>
+                <last_seen>1793545850</last_seen>
+                <name>NM 0x0E5</name>
+                <respawn>0</respawn>
+                <zone>115</zone>
+            </z115_h0e5>
+            <z115_h0e6>
+                <absent_since>1793549132</absent_since>
+                <last_seen>1793545852</last_seen>
+                <name>NM 0x0E6</name>
+                <respawn>0</respawn>
+                <zone>115</zone>
+            </z115_h0e6>
+            <z116_h130>
+                <absent_since>1793463003</absent_since>
+                <last_seen>1793462451</last_seen>
+                <name>NM 0x130</name>
+                <respawn>0</respawn>
+                <zone>116</zone>
+            </z116_h130>
+            <z116_h131>
+                <absent_since>1793463003</absent_since>
+                <last_seen>1793462451</last_seen>
+                <name>NM 0x131</name>
+                <respawn>0</respawn>
+                <zone>116</zone>
+            </z116_h131>
+            <z117_h070>
+                <absent_since>1793407024</absent_since>
+                <last_seen>1793406356</last_seen>
+                <name>NM 0x070</name>
+                <respawn>0</respawn>
+                <zone>117</zone>
+            </z117_h070>
+            <z117_h073>
+                <absent_since>1793407024</absent_since>
+                <last_seen>1793406402</last_seen>
+                <name>NM 0x073</name>
+                <respawn>0</respawn>
+                <zone>117</zone>
+            </z117_h073>
+            <z117_h0ee>
+                <absent_since>0</absent_since>
+                <last_seen>1793394250</last_seen>
+                <name>NM 0x0EE</name>
+                <respawn>0</respawn>
+                <zone>117</zone>
+            </z117_h0ee>
+            <z117_h0f2>
+                <absent_since>0</absent_since>
+                <last_seen>1793395059</last_seen>
+                <name>NM 0x0F2</name>
+                <respawn>0</respawn>
+                <zone>117</zone>
+            </z117_h0f2>
+            <z117_h112>
+                <absent_since>0</absent_since>
+                <last_seen>1793393650</last_seen>
+                <name>NM 0x112</name>
+                <respawn>0</respawn>
+                <zone>117</zone>
+            </z117_h112>
+            <z117_h17e>
+                <absent_since>0</absent_since>
+                <last_seen>1793394273</last_seen>
+                <name>NM 0x17E</name>
+                <respawn>0</respawn>
+                <zone>117</zone>
+            </z117_h17e>
+            <z117_h238>
+                <absent_since>0</absent_since>
+                <last_seen>1793395533</last_seen>
+                <name>NM 0x238</name>
+                <respawn>0</respawn>
+                <zone>117</zone>
+            </z117_h238>
+            <z118_h16a>
+                <absent_since>0</absent_since>
+                <last_seen>1793549705</last_seen>
+                <name>NM 0x16A</name>
+                <respawn>0</respawn>
+                <zone>118</zone>
+            </z118_h16a>
+            <z118_h16b>
+                <absent_since>0</absent_since>
+                <last_seen>1793549708</last_seen>
+                <name>NM 0x16B</name>
+                <respawn>0</respawn>
+                <zone>118</zone>
+            </z118_h16b>
+            <z118_h1ca>
+                <absent_since>0</absent_since>
+                <last_seen>1793549458</last_seen>
+                <name>NM 0x1CA</name>
+                <respawn>0</respawn>
+                <zone>118</zone>
+            </z118_h1ca>
+            <z118_h1cb>
+                <absent_since>0</absent_since>
+                <last_seen>1793549359</last_seen>
+                <name>NM 0x1CB</name>
+                <respawn>0</respawn>
+                <zone>118</zone>
+            </z118_h1cb>
+            <z119_h0af>
+                <absent_since>0</absent_since>
+                <last_seen>0</last_seen>
+                <name>NM 0x0AF</name>
+                <respawn>0</respawn>
+                <zone>119</zone>
+            </z119_h0af>
+            <z119_h0b2>
+                <absent_since>0</absent_since>
+                <last_seen>0</last_seen>
+                <name>NM 0x0B2</name>
+                <respawn>0</respawn>
+                <zone>119</zone>
+            </z119_h0b2>
+            <z120_h172>
+                <absent_since>1793529872</absent_since>
+                <last_seen>1793529812</last_seen>
+                <name>NM 0x172</name>
+                <respawn>0</respawn>
+                <zone>120</zone>
+            </z120_h172>
+            <z126_h148>
+                <absent_since>1793534288</absent_since>
+                <last_seen>1793534128</last_seen>
+                <name>NM 0x148</name>
+                <respawn>0</respawn>
+                <zone>126</zone>
+            </z126_h148>
+            <z141_h040>
+                <absent_since>0</absent_since>
+                <last_seen>1793401101</last_seen>
+                <name>NM 0x040</name>
+                <respawn>0</respawn>
+                <zone>141</zone>
+            </z141_h040>
+            <z142_h04e>
+                <absent_since>1793400440</absent_since>
+                <last_seen>1793400275</last_seen>
+                <name>NM 0x04E</name>
+                <respawn>0</respawn>
+                <zone>142</zone>
+            </z142_h04e>
+            <z142_h054>
+                <absent_since>1793400440</absent_since>
+                <last_seen>1793400315</last_seen>
+                <name>NM 0x054</name>
+                <respawn>0</respawn>
+                <zone>142</zone>
+            </z142_h054>
+            <z143_h104>
+                <absent_since>0</absent_since>
+                <last_seen>1793448908</last_seen>
+                <name>NM 0x104</name>
+                <respawn>0</respawn>
+                <zone>143</zone>
+            </z143_h104>
+            <z143_h105>
+                <absent_since>0</absent_since>
+                <last_seen>1793449710</last_seen>
+                <name>NM 0x105</name>
+                <respawn>0</respawn>
+                <zone>143</zone>
+            </z143_h105>
+            <z143_h108>
+                <absent_since>0</absent_since>
+                <last_seen>1793449710</last_seen>
+                <name>NM 0x108</name>
+                <respawn>0</respawn>
+                <zone>143</zone>
+            </z143_h108>
+            <z145_h179>
+                <absent_since>1793460455</absent_since>
+                <last_seen>1793458071</last_seen>
+                <name>NM 0x179</name>
+                <respawn>0</respawn>
+                <zone>145</zone>
+            </z145_h179>
+            <z145_h17b>
+                <absent_since>1793460455</absent_since>
+                <last_seen>1793458092</last_seen>
+                <name>NM 0x17B</name>
+                <respawn>0</respawn>
+                <zone>145</zone>
+            </z145_h17b>
+            <z147_h0ea>
+                <absent_since>1793455861</absent_since>
+                <last_seen>1793455641</last_seen>
+                <name>NM 0x0EA</name>
+                <respawn>0</respawn>
+                <zone>147</zone>
+            </z147_h0ea>
+            <z147_h0ec>
+                <absent_since>1793455861</absent_since>
+                <last_seen>1793455650</last_seen>
+                <name>NM 0x0EC</name>
+                <respawn>0</respawn>
+                <zone>147</zone>
+            </z147_h0ec>
+            <z149_h028>
+                <absent_since>1793444658</absent_since>
+                <last_seen>1793444607</last_seen>
+                <name>NM 0x028</name>
+                <respawn>0</respawn>
+                <zone>149</zone>
+            </z149_h028>
+            <z149_h02b>
+                <absent_since>1793444658</absent_since>
+                <last_seen>1793444601</last_seen>
+                <name>NM 0x02B</name>
+                <respawn>0</respawn>
+                <zone>149</zone>
+            </z149_h02b>
+            <z149_h02f>
+                <absent_since>1793444658</absent_since>
+                <last_seen>1793444607</last_seen>
+                <name>NM 0x02F</name>
+                <respawn>0</respawn>
+                <zone>149</zone>
+            </z149_h02f>
+            <z151_h0b8>
+                <absent_since>1793528818</absent_since>
+                <last_seen>1793528802</last_seen>
+                <name>NM 0x0B8</name>
+                <respawn>0</respawn>
+                <zone>151</zone>
+            </z151_h0b8>
+            <z151_h1a6>
+                <absent_since>1793528818</absent_since>
+                <last_seen>1793528796</last_seen>
+                <name>NM 0x1A6</name>
+                <respawn>0</respawn>
+                <zone>151</zone>
+            </z151_h1a6>
+            <z151_h1a9>
+                <absent_since>1793528818</absent_since>
+                <last_seen>1793528800</last_seen>
+                <name>NM 0x1A9</name>
+                <respawn>0</respawn>
+                <zone>151</zone>
+            </z151_h1a9>
+            <z157_h130>
+                <absent_since>1793534097</absent_since>
+                <last_seen>1793533547</last_seen>
+                <name>NM 0x130</name>
+                <respawn>0</respawn>
+                <zone>157</zone>
+            </z157_h130>
+            <z157_h131>
+                <absent_since>1793534097</absent_since>
+                <last_seen>1793533554</last_seen>
+                <name>NM 0x131</name>
+                <respawn>0</respawn>
+                <zone>157</zone>
+            </z157_h131>
+            <z158_h004>
+                <absent_since>1793533542</absent_since>
+                <last_seen>1793533379</last_seen>
+                <name>NM 0x004</name>
+                <respawn>0</respawn>
+                <zone>158</zone>
+            </z158_h004>
+            <z158_h009>
+                <absent_since>1793533542</absent_since>
+                <last_seen>1793533418</last_seen>
+                <name>NM 0x009</name>
+                <respawn>0</respawn>
+                <zone>158</zone>
+            </z158_h009>
+            <z158_h017>
+                <absent_since>1793533542</absent_since>
+                <last_seen>1793533400</last_seen>
+                <name>NM 0x017</name>
+                <respawn>0</respawn>
+                <zone>158</zone>
+            </z158_h017>
+            <z158_h027>
+                <absent_since>1793533542</absent_since>
+                <last_seen>1793533336</last_seen>
+                <name>NM 0x027</name>
+                <respawn>0</respawn>
+                <zone>158</zone>
+            </z158_h027>
+            <z158_h037>
+                <absent_since>1793533542</absent_since>
+                <last_seen>1793533455</last_seen>
+                <name>NM 0x037</name>
+                <respawn>0</respawn>
+                <zone>158</zone>
+            </z158_h037>
+            <z161_h0fb>
+                <absent_since>1793525742</absent_since>
+                <last_seen>1793525359</last_seen>
+                <name>NM 0x0FB</name>
+                <respawn>0</respawn>
+                <zone>161</zone>
+            </z161_h0fb>
+            <z162_h0c2>
+                <absent_since>1793538414</absent_since>
+                <last_seen>1793538265</last_seen>
+                <name>NM 0x0C2</name>
+                <respawn>0</respawn>
+                <zone>162</zone>
+            </z162_h0c2>
+            <z162_h0c3>
+                <absent_since>1793538414</absent_since>
+                <last_seen>1793538382</last_seen>
+                <name>NM 0x0C3</name>
+                <respawn>0</respawn>
+                <zone>162</zone>
+            </z162_h0c3>
+            <z166_h030>
+                <absent_since>1793466891</absent_since>
+                <last_seen>1793465573</last_seen>
+                <name>NM 0x030</name>
+                <respawn>0</respawn>
+                <zone>166</zone>
+            </z166_h030>
+            <z166_h034>
+                <absent_since>1793466891</absent_since>
+                <last_seen>1793465585</last_seen>
+                <name>NM 0x034</name>
+                <respawn>0</respawn>
+                <zone>166</zone>
+            </z166_h034>
+            <z167_h0e6>
+                <absent_since>1793440955</absent_since>
+                <last_seen>1793440724</last_seen>
+                <name>NM 0x0E6</name>
+                <respawn>0</respawn>
+                <zone>167</zone>
+            </z167_h0e6>
+            <z169_h093>
+                <absent_since>1793460799</absent_since>
+                <last_seen>1793460676</last_seen>
+                <name>NM 0x093</name>
+                <respawn>0</respawn>
+                <zone>169</zone>
+            </z169_h093>
+            <z184_h001>
+                <absent_since>1793537967</absent_since>
+                <last_seen>1793536266</last_seen>
+                <name>NM 0x001</name>
+                <respawn>0</respawn>
+                <zone>184</zone>
+            </z184_h001>
+            <z190_h109>
+                <absent_since>1793522715</absent_since>
+                <last_seen>1793522032</last_seen>
+                <name>20</name>
+                <respawn>0</respawn>
+                <zone>190</zone>
+            </z190_h109>
+            <z190_h133>
+                <absent_since>1793522715</absent_since>
+                <last_seen>1793522610</last_seen>
+                <name>NM 0x133</name>
+                <respawn>0</respawn>
+                <zone>190</zone>
+            </z190_h133>
+            <z191_h01f>
+                <absent_since>1793453985</absent_since>
+                <last_seen>1793453623</last_seen>
+                <name>NM 0x01F</name>
+                <respawn>0</respawn>
+                <zone>191</zone>
+            </z191_h01f>
+            <z191_h020>
+                <absent_since>1793453985</absent_since>
+                <last_seen>1793453914</last_seen>
+                <name>NM 0x020</name>
+                <respawn>0</respawn>
+                <zone>191</zone>
+            </z191_h020>
+            <z192_h065>
+                <absent_since>1793462440</absent_since>
+                <last_seen>1793462420</last_seen>
+                <name>NM 0x065</name>
+                <respawn>0</respawn>
+                <zone>192</zone>
+            </z192_h065>
+            <z194_h0fe>
+                <absent_since>0</absent_since>
+                <last_seen>0</last_seen>
+                <name>NM 0x0FE</name>
+                <respawn>0</respawn>
+                <zone>194</zone>
+            </z194_h0fe>
+            <z194_h12f>
+                <absent_since>0</absent_since>
+                <last_seen>0</last_seen>
+                <name>NM 0x12F</name>
+                <respawn>0</respawn>
+                <zone>194</zone>
+            </z194_h12f>
+            <z194_h131>
+                <absent_since>1793463105</absent_since>
+                <last_seen>1793463008</last_seen>
+                <name>NM 0x131</name>
+                <respawn>0</respawn>
+                <zone>194</zone>
+            </z194_h131>
+            <z194_h132>
+                <absent_since>1793463105</absent_since>
+                <last_seen>1793463013</last_seen>
+                <name>NM 0x132</name>
+                <respawn>0</respawn>
+                <zone>194</zone>
+            </z194_h132>
+            <z195_h075>
+                <absent_since>1793443241</absent_since>
+                <last_seen>1793442995</last_seen>
+                <name>NM 0x075</name>
+                <respawn>0</respawn>
+                <zone>195</zone>
+            </z195_h075>
+            <z195_h076>
+                <absent_since>1793443241</absent_since>
+                <last_seen>1793443007</last_seen>
+                <name>NM 0x076</name>
+                <respawn>0</respawn>
+                <zone>195</zone>
+            </z195_h076>
+            <z200_h130>
+                <absent_since>1793531827</absent_since>
+                <last_seen>1793531436</last_seen>
+                <name>NM 0x130</name>
+                <respawn>0</respawn>
+                <zone>200</zone>
+            </z200_h130>
+            <z204_h0f6>
+                <absent_since>1793525041</absent_since>
+                <last_seen>1793524367</last_seen>
+                <name>NM 0x0F6</name>
+                <respawn>0</respawn>
+                <zone>204</zone>
+            </z204_h0f6>
+            <z204_h0f7>
+                <absent_since>1793525041</absent_since>
+                <last_seen>1793524907</last_seen>
+                <name>NM 0x0F7</name>
+                <respawn>0</respawn>
+                <zone>204</zone>
+            </z204_h0f7>
+            <z204_h0fb>
+                <absent_since>1793525041</absent_since>
+                <last_seen>1793524361</last_seen>
+                <name>NM 0x0FB</name>
+                <respawn>0</respawn>
+                <zone>204</zone>
+            </z204_h0fb>
+            <z204_h0fe>
+                <absent_since>1793525041</absent_since>
+                <last_seen>1793524538</last_seen>
+                <name>5</name>
+                <respawn>0</respawn>
+                <zone>204</zone>
+            </z204_h0fe>
+            <z5_h111>
+                <absent_since>1793521877</absent_since>
+                <last_seen>1793521859</last_seen>
+                <name>NM 0x111</name>
+                <respawn>0</respawn>
+                <zone>5</zone>
+            </z5_h111>
+            <z7_h147>
+                <absent_since>1793522919</absent_since>
+                <last_seen>1793522829</last_seen>
+                <name>NM 0x147</name>
+                <respawn>0</respawn>
+                <zone>7</zone>
+            </z7_h147>
+            <z7_h153>
+                <absent_since>1793522919</absent_since>
+                <last_seen>1793522910</last_seen>
+                <name>NM 0x153</name>
+                <respawn>0</respawn>
+                <zone>7</zone>
+            </z7_h153>
+            <z81_h16d>
+                <absent_since>1793618553</absent_since>
+                <last_seen>1793618419</last_seen>
+                <name>NM 0x16D</name>
+                <respawn>0</respawn>
+                <zone>81</zone>
+            </z81_h16d>
+            <z81_h177>
+                <absent_since>1793618553</absent_since>
+                <last_seen>1793618371</last_seen>
+                <name>NM 0x177</name>
+                <respawn>0</respawn>
+                <zone>81</zone>
+            </z81_h177>
+            <z84_h19d>
+                <absent_since>1793530191</absent_since>
+                <last_seen>1793530015</last_seen>
+                <name>NM 0x19D</name>
+                <respawn>0</respawn>
+                <zone>84</zone>
+            </z84_h19d>
+            <z88_h179>
+                <absent_since>1793618366</absent_since>
+                <last_seen>1793618138</last_seen>
+                <name>NM 0x179</name>
+                <respawn>0</respawn>
+                <zone>88</zone>
+            </z88_h179>
+            <z91_h16d>
+                <absent_since>1793531043</absent_since>
+                <last_seen>1793530928</last_seen>
+                <name>NM 0x16D</name>
+                <respawn>0</respawn>
+                <zone>91</zone>
+            </z91_h16d>
+            <z91_h171>
+                <absent_since>1793531043</absent_since>
+                <last_seen>1793530901</last_seen>
+                <name>NM 0x171</name>
+                <respawn>0</respawn>
+                <zone>91</zone>
+            </z91_h171>
+            <z95_h180>
+                <absent_since>1793618132</absent_since>
+                <last_seen>1793617995</last_seen>
+                <name>NM 0x180</name>
+                <respawn>0</respawn>
+                <zone>95</zone>
+            </z95_h180>
+            <z95_h18a>
+                <absent_since>0</absent_since>
+                <last_seen>0</last_seen>
+                <name>NM 0x18A</name>
+                <respawn>0</respawn>
+                <zone>95</zone>
+            </z95_h18a>
+            <z97_h168>
+                <absent_since>1793618602</absent_since>
+                <last_seen>1793618558</last_seen>
+                <name>NM 0x168</name>
+                <respawn>0</respawn>
+                <zone>97</zone>
+            </z97_h168>
+            <z98_h115>
+                <absent_since>1793531185</absent_since>
+                <last_seen>1793531116</last_seen>
+                <name>NM 0x115</name>
+                <respawn>0</respawn>
+                <zone>98</zone>
+            </z98_h115>
+        </targets>
+        <visible>true</visible>
+        <window>
+            <bg>
+                <alpha>210</alpha>
+                <blue>24</blue>
+                <green>18</green>
+                <red>15</red>
+                <visible>true</visible>
+            </bg>
+            <flags>
+                <bold>false</bold>
+                <bottom>false</bottom>
+                <draggable>true</draggable>
+                <italic>false</italic>
+                <right>false</right>
+            </flags>
+            <padding>8</padding>
+            <pos>
+                <x>1271.5549316406</x>
+                <y>245.24444580078</y>
+            </pos>
+            <text>
+                <alpha>255</alpha>
+                <blue>245</blue>
+                <font>Consolas</font>
+                <fonts>
+
+                </fonts>
+                <green>240</green>
+                <red>235</red>
+                <size>10</size>
+                <stroke>
+                    <alpha>220</alpha>
+                    <blue>0</blue>
+                    <green>0</green>
+                    <red>0</red>
+                    <width>1</width>
+                </stroke>
+            </text>
+        </window>
+    </global>
+</settings>
