@@ -1,6 +1,6 @@
 _addon.name = 'NMTracker'
 _addon.author = 'OpenAI'
-_addon.version = '0.3.0-beta'
+_addon.version = '0.3.2-beta'
 _addon.description = 'Suivi de NM par index hexadecimal TargetInfo (Windower 4 / Lua 5.1)'
 _addon.commands = {'nm'}
 
@@ -8,6 +8,16 @@ local texts = require('texts')
 local config = require('config')
 local bit = require('bit')
 local packets = require('packets')
+require('tables')
+
+-- Le paquet 0x058 doit utiliser le format Assist pour changer la cible
+-- sans activer le verrouillage de cible. On ajoute aussi l'index de cible.
+packets.raw_fields.incoming[0x058] = L{
+    {ctype = 'unsigned int', label = 'Assist Id'},
+    {ctype = 'unsigned int', label = 'Target Id'},
+    {ctype = 'unsigned short', label = 'Assist Index'},
+    {ctype = 'unsigned short', label = 'Target Index'},
+}
 
 local defaults = {
     window = {
@@ -46,8 +56,11 @@ local AUTO_TARGET_INTERVAL = 0.5
 -- Une seule requete est en vol a la fois, avec un intervalle anti-spam.
 local scan_inflight = nil
 local scan_inflight_at = 0
+local scan_inflight_zone = nil
 local scan_last_request = 0
 local scan_cursor = 0
+local scan_zone_id = nil
+local scan_zone_changed_at = 0
 local SCAN_INTERVAL = 1.5
 local SCAN_TIMEOUT = 3.0
 local SCAN_POSITION_TTL = 12
@@ -59,8 +72,10 @@ end
 local function normalize_hex(value)
     if not value then return nil end
     value = tostring(value):upper():gsub('^0X', '')
-    if not value:match('^%x%x%x$') then return nil end
-    return value
+    if not value:match('^%x%x?%x?$') then return nil end
+    local number = tonumber(value, 16)
+    if not number or number < 0 or number > 0xFFF then return nil end
+    return ('%03X'):format(number)
 end
 
 local function save_settings()
@@ -338,8 +353,8 @@ end
 
 
 -- Selectionne le NM suivi le plus proche, uniquement dans les 50 yalms.
--- Le paquet entrant 0x058 est le paquet Windower utilise pour verrouiller
--- une cible (meme methode que l'addon SendAllTarget). Aucun paquet d'attaque.
+-- Utilise le format de paquet Assist (Assist Id/Index + Target Id/Index)
+-- pour changer la cible sans verrouiller la cible ni engager le combat.
 local function process_auto_target()
     if not settings.target_auto then
         last_auto_target_id = nil
@@ -389,9 +404,10 @@ local function process_auto_target()
 
     local ok, err = pcall(function()
         packets.inject(packets.new('incoming', 0x058, {
-            ['Player'] = player.id,
-            ['Target'] = nearest.id,
-            ['Player Index'] = player.index,
+            ['Assist Id'] = player.id,
+            ['Target Id'] = nearest.id,
+            ['Assist Index'] = player.index,
+            ['Target Index'] = nearest.index,
         }))
     end)
 
@@ -420,12 +436,32 @@ end
 local function process_scan_queue()
     if not settings.scan_enabled then
         scan_inflight = nil
+        scan_inflight_zone = nil
         return
     end
 
     local now = os.clock()
+    local zone_id = get_zone_id()
+
+    -- A chaque changement de zone, on repart du debut de la liste sauvegardee
+    -- pour cette zone. On laisse aussi un court delai aux anciennes reponses.
+    if scan_zone_id ~= zone_id then
+        scan_zone_id = zone_id
+        scan_inflight = nil
+        scan_inflight_zone = nil
+        scan_cursor = 0
+        scan_last_request = 0
+        scan_zone_changed_at = now
+        return
+    end
+
+    if (now - scan_zone_changed_at) < SCAN_INTERVAL then
+        return
+    end
+
     if scan_inflight and (now - scan_inflight_at) >= SCAN_TIMEOUT then
         scan_inflight = nil
+        scan_inflight_zone = nil
     end
     if scan_inflight or (now - scan_last_request) < SCAN_INTERVAL then
         return
@@ -437,18 +473,24 @@ local function process_scan_queue()
     scan_cursor = (scan_cursor % #targets) + 1
     local target = targets[scan_cursor]
     scan_inflight = target.index
+    scan_inflight_zone = zone_id
     scan_inflight_at = now
     scan_last_request = now
 
     local ok, err = pcall(send_scan_request, target.index)
     if not ok then
         scan_inflight = nil
+        scan_inflight_zone = nil
         msg('Erreur requete scan: ' .. tostring(err))
     end
 end
 
 local function handle_scan_response(original)
-    if not settings.scan_enabled or not scan_inflight or not original then return end
+    local zone_id = get_zone_id()
+    if not settings.scan_enabled or not scan_inflight or not original
+        or scan_inflight_zone ~= zone_id then
+        return
+    end
 
     local ok, target_index, updatemask, entity_id = pcall(function()
         return original:unpack('h', 0x09),
@@ -458,9 +500,10 @@ local function handle_scan_response(original)
     if not ok or target_index ~= scan_inflight then return end
 
     local hex = ('%03X'):format(target_index)
-    local key = record_key(get_zone_id(), hex)
+    local key = record_key(zone_id, hex)
     local data = settings.targets[key]
     scan_inflight = nil
+    scan_inflight_zone = nil
     if not data then return end
 
     if entity_id then data.entity_id = entity_id end
@@ -686,12 +729,15 @@ windower.register_event('addon command', function(command, ...)
         if action == 'on' then
             settings.scan_enabled = true
             scan_inflight = nil
+            scan_inflight_zone = nil
             scan_last_request = 0
+            scan_cursor = 0
             save_settings()
             msg('ScanZone active. Les requetes de scan reprennent.')
         elseif action == 'off' then
             settings.scan_enabled = false
             scan_inflight = nil
+            scan_inflight_zone = nil
             save_settings()
             msg('ScanZone desactive. Aucun nouveau scan ne sera envoye.')
         elseif action == 'status' then
@@ -713,6 +759,7 @@ windower.register_event('addon command', function(command, ...)
             settings.targets = {}
             clear_pending = false
             scan_inflight = nil
+            scan_inflight_zone = nil
             scan_cursor = 0
             save_settings()
             msg('Liste complete des NM et timers effaces.')
@@ -782,6 +829,8 @@ end)
 
 windower.register_event('load', function()
     current_zone = get_zone_id()
+    scan_zone_id = current_zone
+    scan_zone_changed_at = os.clock()
     refresh()
     if settings.visible then show_window() else hide_window() end
 end)
@@ -798,4 +847,4 @@ else
 end
 
 refresh()
-msg('Charge v0.3.0-beta. ScanZone: ' .. (settings.scan_enabled and 'ON' or 'OFF') .. ' | Ciblage auto: ' .. (settings.target_auto and 'ON' or 'OFF') .. '. //nm help')
+msg('Charge v0.3.2-beta. ScanZone: ' .. (settings.scan_enabled and 'ON' or 'OFF') .. ' | Ciblage auto: ' .. (settings.target_auto and 'ON' or 'OFF') .. '. //nm help')
